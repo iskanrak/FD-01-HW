@@ -1,0 +1,41 @@
+.tanzania{ position: absolute;
+    width: 550px;
+    height: 275px;
+    background: #000;
+    z-index: 2;
+}
+
+.tanzania_triangle_topleft_yellow {
+   position: absolute;
+    display: inline-block;
+   border-top: 240px solid #fcd116;
+   border-right: 460px solid transparent;
+}
+
+.tanzania_triangle_bottomright_yellow {
+    position: relative;
+    display: inline-block;
+    border-bottom: 240px solid #fcd116;
+    border-left: 460px solid transparent;
+
+    float: right;
+    top:35px;
+}
+
+.tanzania_triangle_topleft_green {
+    position: absolute;
+    display: inline-block;
+    border-top: 205px solid #1eb53a;
+    border-right: 405px solid transparent;
+
+}
+
+.tanzania_triangle_bottomright_blue {
+    position: relative;
+    display: inline-block;
+    border-bottom: 205px solid #00a3dd;
+    border-left: 405px solid transparent;
+
+    float: right;
+    top:-170px;
+}

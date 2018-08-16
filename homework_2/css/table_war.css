@@ -1,0 +1,22 @@
+.table{
+    border-collapse: collapse;
+    text-align: center;
+}
+.cell{
+    border: 1px solid black;
+    width: 20%;
+}
+.foot{
+   border: 5px double black;
+    color: blue;
+}
+.text_left{
+    text-align: left;
+}
+.green_cell{
+    background-color: green;
+    color: white;
+}
+.date{
+    width: 10%;
+}

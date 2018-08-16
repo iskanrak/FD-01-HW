@@ -1,0 +1,62 @@
+@import url(jamaica/jamaica.css);
+@import url(sweden/sweden.css);
+@import url(central_african_republic/central_african_republic.css);
+@import url(tanzania/tanzania.css);
+@import url(tonga/tonga.css);
+@import url(wallis_and_futuna/wallis_and_futuna.css);
+@import url(sudan/sudan.css);
+@import url(turkey/turkey.css);
+@import url(canada/canada.css);
+@import url(guyana/guyana.css);
+@import url(germany/germany.css);
+@import url(chad/chad.css);
+@import url(japan/japan.css);
+@import url(antigua_and_barbuda/antigua_and_barbuda.css);
+@import url(bhutan/bhutan.css);
+
+.flags{
+    position: relative;
+    float: left;
+    clear: left;
+    margin-bottom: 400px;
+}
+
+.flags:hover .name{
+    display:inline;
+}
+
+.name{
+    position: absolute;
+    display:none;
+    left:560px;
+}
+
+.name_fixed {
+    position: absolute;
+    left:560px;
+}
+
+.flags:hover .name_fixed{
+    display: none;
+}
+
+.flag_hide{
+    position: absolute;
+}
+
+.flag_hide:hover {
+    display: none;
+    opacity: 0;
+}
+
+.flag_hidden_show {
+    position: absolute;
+    opacity: 0;
+   }
+
+.flag_hidden_show:hover {
+    opacity: 1;
+}
+
+
+

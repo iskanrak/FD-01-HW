@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Logo & To-do list</title>
+	<link href="styles/styles.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+</head>
+<body>
+	<div class="logo">
+		<div class='logo__text'>art.lebedev</div>
+	</div>
+
+
+	<div class="to-do-list">
+		<input type="text"  class="" id="typeTask" placeholder="Введите дело">
+		<input type="button" class="btn btn-primary" value="Добавить дело" id="addTask">
+		<input type="button" class="btn btn-danger" value="Очистить весь список" id="clearTask">
+	</div>
+	<ol id="list" ></ol>
+	<script src="js/logo-change__background_color.js" defer></script>
+	<script src="js/to-do-list.js" defer></script>
+	</body>
+</html>

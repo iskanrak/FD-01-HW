@@ -1,0 +1,36 @@
+.guyana {
+    position: absolute;
+    width: 550px;
+    height: 330px;
+    background: #009e49;
+}
+
+.guyana_triangle_right_white{
+    position: inherit;
+    border-top: 166px solid transparent;
+    border-left: 550px solid #ffffff;
+    border-bottom: 166px solid transparent;
+}
+
+.guyana_triangle_right_yellow{
+    position: inherit;
+    border-top: 150px solid transparent;
+    border-left: 504px solid #fcd116;
+    border-bottom: 150px solid transparent;
+    top: 16px;
+}
+
+.guyana_triangle_right_black{
+    position: inherit;
+    border-top: 166px solid transparent;
+    border-left: 275px solid #000000;
+    border-bottom: 166px solid transparent
+}
+
+.guyana_triangle_right_red{
+    position: inherit;
+    border-top: 150px solid transparent;
+    border-left: 242px solid #ce1126;
+    border-bottom: 150px solid transparent;
+    top: 16px;
+}

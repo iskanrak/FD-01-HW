@@ -1,0 +1,154 @@
+.juggler{
+    position: relative;
+    width: 324px;
+    height: 356px;
+}
+
+.juggler__body {
+    border: 1px solid black;
+    height: 120px;
+    width: 105px;
+    position: absolute;
+    top: 163px;
+    left: 116px;
+    -webkit-transform: perspective(90px) rotateX(-12deg);
+    -moz-transform: perspective(90px) rotateX(-12deg);
+    -ms-transform: perspective(90px) rotateX(-12deg);
+    -o-transform: perspective(90px) rotateX(-12deg);
+    transform: perspective(90px) rotateX(-12deg);
+}
+.juggler__head {
+    height: 70px;
+    width: 54px;
+    border-radius: 40px / 50px;
+    border: 1px solid black;
+    position: absolute;
+    top: 71px;
+    left: 142px;
+}
+
+.juggler__hand-left{
+    position: absolute;
+}
+
+.juggler__hand-right {
+    left: 125px;
+    position: absolute;
+}
+
+.juggler__shoulder-move {
+    width: 110px;
+    border: 1px solid black;
+    position: absolute;
+    transform: rotate(90deg);
+    transform-origin: 0%;
+    top: 154px;
+    left: 107px;
+    animation: shoulder__move-left_right 1s infinite ease-in-out;
+}
+
+@keyframes shoulder__move-left_right {
+    25% {
+        transform: rotate(95deg);
+    }
+    75%{
+        transform: rotate(85deg);
+    }
+}
+
+.juggler__forearm-rotation{
+    width: 54px;
+    border: 1px solid black;
+    position: absolute;
+    top: -1px;
+    left: 110px;
+    transform-origin: 0%;
+    animation: forearm-rotation 1s infinite linear;
+}
+
+@keyframes forearm-rotation {
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.boll{
+    width: 28px;
+    height: 28px;
+    background: red;
+    border-radius: 14px;
+    position: absolute;
+    top:322px;
+    left: 94px;
+}
+
+.boll_flying-left-N1{
+    animation: boll_flying 2s infinite linear;
+}
+
+.boll_flying-left-N2{animation: boll_flying 2s infinite linear;
+    -webkit-animation-delay: -1s;
+    -moz-animation-delay: -1s;
+    -o-animation-delay: -1s;
+    animation-delay: -1s;
+}
+
+@keyframes boll_flying {
+    6.25%{
+        top:299px;
+        left: 141px;
+    }
+    12.5%{
+        top: 254px;
+        left: 154px;
+    }
+    45%{
+        top:27px;
+        left: 100px;
+    }
+    50%{
+        top:21px;
+        left: 90px;
+    }
+    55%{
+        top:27px;
+        left: 80px;
+    }
+    87.5%{top:254px;
+        left:35px;}
+
+    93.75%{
+        top:299px;
+        left: 49px;
+    }
+}
+
+.boll_flying-right-N1{
+    animation: boll_flying 2s infinite linear;
+    -webkit-animation-delay: -0.5s;
+    -moz-animation-delay: -0.5s;
+    -o-animation-delay: -0.5s;
+    animation-delay: -0.5s;
+}
+
+.boll_flying-right-N2{animation: boll_flying 2s infinite linear;
+    -webkit-animation-delay: -1.5s;
+    -moz-animation-delay: -1.5s;
+    -o-animation-delay: -1.5s;
+    animation-delay: -1.5s;
+}
+
+.juggler__hand-right_animation-delay{
+    -webkit-animation-delay: -0.5s;
+    -moz-animation-delay: -0.5s;
+    -o-animation-delay: -0.5s;
+    animation-delay: -0.5s;
+}
+
+.animation-reverse{
+    -webkit-animation-direction: reverse;
+    -moz-animation-direction: reverse;
+    -o-animation-direction: reverse;
+    animation-direction: reverse;
+}

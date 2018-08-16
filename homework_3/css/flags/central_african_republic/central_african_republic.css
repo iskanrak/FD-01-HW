@@ -1,0 +1,79 @@
+.central_african_republic{ position: absolute;
+    width: 550px;
+    height: 275px;
+}
+
+.central_african_republic_line_top{
+    position: relative;
+
+    width: 550px;
+    height: 25%;
+    background: #003082;
+}
+
+.central_african_republic_line_middle_top{
+    position: relative;
+    width: 550px;
+    height: 25%;
+    background: #fff;
+}
+
+.central_african_republic_line_middle_bottom{
+    position: relative;
+    width: 550px;
+    height: 25%;
+    background: #289728;
+}
+
+.central_african_republic_line_bottom{
+    position: relative;
+    width: 550px;
+    height: 25%;
+    background: #ffce00;
+}
+
+.central_african_republic_line_vertical{
+    position: absolute;
+    width: 50px;
+    height: 275px;
+    background: #d21034;
+    left:47%;
+    z-index: 1;
+}
+
+.central_african_republic_star_triangle_left {
+    z-index: 1;
+    position: absolute;
+    border-right:  40px solid transparent;
+    border-bottom: 28px  solid #ffce00;
+    border-left:   40px solid transparent;
+    -moz-transform:    rotate(35deg);
+    -webkit-transform: rotate(35deg);
+    -ms-transform:     rotate(35deg);
+    -o-transform:      rotate(35deg);
+    left:30px;
+    top:25px;
+}
+
+.central_african_republic_star_triangle_right {
+    border-bottom: 32px solid #ffce00;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    position: absolute;
+    z-index: 1;
+    left:58px;
+}
+
+.central_african_republic_star_triangle_r {
+    position: absolute;
+    border-right: 40px solid transparent;
+    border-bottom: 28px solid #ffce00;
+    border-left: 40px solid transparent;
+    -webkit-transform: rotate(-35deg);
+    -moz-transform:    rotate(-35deg);
+    -ms-transform:     rotate(-35deg);
+    -o-transform:      rotate(-35deg);
+    z-index: 1;
+    left:30px;
+    top:25px;
+}

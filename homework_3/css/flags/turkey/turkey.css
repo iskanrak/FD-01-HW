@@ -1,0 +1,77 @@
+.turkey {
+    position: absolute;
+    width: 550px;
+    height: 367px;
+    background: #e30a17;
+}
+.turkey_crescent_circle_left {
+    position: absolute;
+    display: inline-block;
+    width: 185px;
+    height: 185px;
+    background: #ffffff;
+    -moz-border-radius: 91px;
+    -webkit-border-radius: 91px;
+    border-radius: 91px;
+    left: 91px;
+    top: 91px;
+}
+.turkey_crescent_circle_right {
+    position: relative;
+    display: inline-block;
+    width: 147px;
+    height: 147px;
+    background: #e30a17;
+    -moz-border-radius: 73.5px;
+    -webkit-border-radius: 73.5px;
+    border-radius: 73.5px;
+    top: 17.5px;
+    right:-7px;
+    float: right;
+}
+.turkey_star_triangle_left {
+    z-index: 100;
+    position: absolute;
+    border-right:  40px solid transparent;
+    border-bottom: 28px  solid #ffffff;
+    border-left:   40px solid transparent;
+    -moz-transform:    rotate(35deg);
+    -webkit-transform: rotate(35deg);
+    -ms-transform:     rotate(35deg);
+    -o-transform:      rotate(35deg);
+    left:30px;
+    top:25px;
+}
+
+.turkey_star_triangle_right {
+    border-bottom: 32px solid #ffffff;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    position: absolute;
+    z-index: 98;
+    left:58px;
+}
+
+.turkey_star_triangle_r {
+    position: absolute;
+    border-right: 40px solid transparent;
+    border-bottom: 28px solid #ffffff;
+    border-left: 40px solid transparent;
+    -webkit-transform: rotate(-35deg);
+    -moz-transform:    rotate(-35deg);
+    -ms-transform:     rotate(-35deg);
+    -o-transform:      rotate(-35deg);
+    z-index: 98;
+    left:30px;
+    top:25px;
+}
+.turkey_stars_rotate_and_position{
+    position: absolute;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    left:235px;
+    top: 150px;
+}

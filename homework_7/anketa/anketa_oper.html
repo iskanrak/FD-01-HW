@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>anketa</title>
+</head>
+<body>
+    <input type="text"  class="textarea" placeholder="Введите фамилию" id="typeSecondName">
+    <input type="text"  class="textarea" placeholder="Введите имя" id="typeName">
+    <input type="text"  class="textarea" placeholder="Введите отчество" id="typePatronymic">
+    <input type="text"  class="textarea" placeholder="Введите возраст" id="typeAge">
+    <div> Выберите пол: </div>
+    <input type="radio" name="gender" id="man" value="мужчина" checked>Мужчина
+    <input type="radio" name="gender" id="woman" value="женщина">Женщина
+    <input type="button" value="Проверка" id="buttonCheck" />
+    <div>Ф.И.О.:
+        <span id="name"></span>
+    </div>
+    <div>Ваш возраст, лет:
+        <span id="ageYear"></span>
+    </div>
+    <div>Ваш возраст, дней:
+        <span id="ageDay"></span>
+    </div>
+    <div>Ваш пол:
+        <span id="gender"></span>
+    </div>
+    <div>Пенсионный возраст:
+        <span id="retirement"></span>
+    </div>
+    <script src="js/anketa_oper.js" async></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+.bhutan{
+    width: 550px;
+    height: 367px;
+    display: flex;
+}
+.bhutan_dragon{
+    width: 470px ;
+    height: 331px;
+    background: url("bhutan_dragon.png");
+    margin:auto;
+}
+
+.bhutan_triangle_topleft {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 367px solid #efb22d;
+    border-right: 550px solid transparent;
+    z-index: -1;
+}
+
+.bhutan_triangle_bottomright {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 367px solid #e23d28;
+    border-left: 550px solid transparent;
+    z-index: -1;
+}

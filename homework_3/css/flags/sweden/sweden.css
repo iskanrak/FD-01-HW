@@ -1,0 +1,24 @@
+.sweden{ position: absolute;
+    width: 550px;
+    height: 275px;
+    background: #0b5089;
+}
+
+.sweden_line_horizontal{
+    position: relative;
+    display: inline-block;
+        width: 550px;
+    height: 50px;
+    background: #ffc100;
+    top: 100px;
+}
+
+.sweden_line_vertial {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 275px;
+    background: #ffc100;
+    left:175px;
+   bottom: 55px;
+}

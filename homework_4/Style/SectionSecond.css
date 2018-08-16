@@ -1,0 +1,88 @@
+
+.Foliac_SectionSecond{
+    width: 1920px ;
+    height: 501px  ;
+    background-color: rgb(60, 73, 85);
+}
+.Foliac_SectionSecondFontImage {
+    background-image: url("../Image/SectionSecondBackground.png");
+    opacity: 0.27;
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    background-color: rgb(60, 73, 85);
+    display: block;
+}
+.Foliac_SectionSecondStyle{
+    width: 1140px;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    display: block;
+}
+.Foliac_SectionSecondText{
+    display: block;
+    position: relative;
+    width: 570px;
+    height: 100%;
+    float: right;
+    box-sizing: border-box;
+    padding: 90px 134px 90px 20px ;
+    font-family: "Lato";
+    font-style: normal;
+    opacity: 0.7;
+}
+.Foliac_SectionSecondButton{
+    display: inline-block;
+    position: relative;
+    background-color: inherit;
+    color: #3c4955;
+    border: solid;
+    border-radius: 5px;
+    width:152px;
+    height: 39px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    outline:none;
+}
+.Foliac_SectionSecondButton:hover{
+    background-color: #48bf72;
+}
+.Foliac_SectionSecondButton:active{
+    background-color: inherit;
+    color: #3c4955;
+    border: solid;
+    border-radius: 5px;
+    width:152px;
+    height: 39px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 14px;
+    text-shadow: -1px  1px  0px rgba(0, 0, 0, 0.3);
+    box-shadow:  0 0 0 1px #3c4955 inset;
+}
+.Foliac_SectionSecondTextName{
+    display: block;
+    position: relative;
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+    opacity: 0.7;
+}
+.Foliac_SectionSecondTextProfession{
+    display: block;
+    position: relative;
+    font-size: 24px;
+    color: white;
+    opacity: 0.7;
+  }
+.Foliac_SectionSecondTextDescription{
+    display: block;
+    position: relative;
+    font-size: 16px;
+    color: white;
+    padding: 50px 0px 50px 0px;
+    opacity: 0.7;
+}

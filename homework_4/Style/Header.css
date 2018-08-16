@@ -1,0 +1,91 @@
+
+.Foliac_Header{
+    background-image:url(../Image/HeaderBackGround.png);
+    height:650px;
+    display:block;
+    position:relative;
+    border:none;
+}
+.Foliac_HeaderBackground{
+    width: 1920px;
+    height:650px;
+    background:rgba(60, 73, 85,0.8);
+}
+.Foliac_HeaderContainer{
+    padding-left:390px;
+    padding-right:390px;
+    padding-top:45px;
+}
+.Foliac_HeaderWrapper{
+    position:relative;
+    align-items:center;
+    content:'';
+    display:table;
+    width:100%;
+}
+.Foliac_HeaderLogo{
+    float:left;
+    position:relative;
+    display:inline;
+}
+.Foliac_HeaderNavigation{
+    float:right;
+    position:relative;
+    display:inline;
+    height:40px;
+    top:38px;
+    left:40px;
+}
+.Foliac_HeaderNavElement{
+    position:relative;
+    display:inline;
+    color:white;
+    text-decoration:none;
+    padding-left:40px;
+    padding-right:40px;
+    font-size:16px;
+    font-family:"Lato";
+    font-style: normal;
+}
+.Foliac_HeaderNavFlash:before{
+    content:"/ ";
+    color:#646d76;
+}
+.Foliac_HeaderCaption{
+    color: white;
+    font-size:45px;
+    text-align:center;
+    text-transform:uppercase;
+    padding-top:150px;
+    font-family:"BigJohn";
+    font-weight: normal;
+}
+.Foliac_HeaderRubric{
+    color: white;
+    font-size:30px;
+    text-align:center;
+    text-transform:uppercase;
+    font-family:"SlimJoe";
+    padding-top:15px;
+    opacity: 0.75;
+    font-weight: normal;
+}
+.Foliac_HeaderButtonStyle{
+    position: relative;
+    width: 140px;
+    height: 40px;
+    background: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    top: 40px;
+    margin: 0px auto;
+    color: #48bf72;
+    border-radius: 4px;
+    border: 2px solid #48bf72;
+    border-collapse: collapse;
+    display:block;
+}
+.Foliac_HeaderButtonStyle:active{
+    top: 41px;
+    background: rgba(255,255,255,.2);
+}

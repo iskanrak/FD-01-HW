@@ -1,0 +1,68 @@
+.Foliac_SectionMainSyleSize{
+    width: 1140px;
+    height: 1050px;
+    margin: 0px auto;
+}
+.Foliac_SectionMainSyleButton{
+    position: relative;
+    height: 135px;
+    text-align: center;
+}
+.Foliac_SectionMainSyleButtonStyle{
+    position: inherit;
+    display: inline-block;
+    height: 32px;
+    margin: 50px 5px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 16px;
+    color: #3c4955;
+    background-color: #eaeaea;
+    border-radius: 3px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+.Foliac_SectionMainSyleButtonStyle:hover {
+    background-color: #48bf72;
+    color: white;
+}
+.Foliac_SectionMainSyleButtonStyle:active{
+    top: 1px;
+    text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;
+}
+.Foliac_SectionMainSyleBlockImageFirst{
+    width: 450px;
+    height: 830px;
+    float: left;
+}
+.Foliac_SectionMainSyleBlockImageSecond{
+    width: 650px;
+    height: 830px;
+    float:right;
+}
+.Foliac_SectionMainSyleBlockImageMultipleItems{
+    width: 450px;
+    height: 302px;
+    background: url("../Image/multipleItems.png");
+    padding-bottom: 42px;
+    background-repeat: no-repeat;
+}
+.Foliac_SectionMainSyleBlockImagePhone{
+    width: 450px;
+    height: 486px;
+    background: url("../Image/phone.png");
+}
+.Foliac_SectionMainSyleBlockImageIdentiteVisuelle{
+    width: 650px;
+    height: 438px;
+    background: url("../Image/identiteVisuelle.png");
+    padding-bottom: 42px;
+    background-repeat: no-repeat;
+}
+.Foliac_SectionMainSyleBlockImagePrototype{
+    width: 650px;
+    height: 350px;
+    background: url("../Image/prototype.png");
+}

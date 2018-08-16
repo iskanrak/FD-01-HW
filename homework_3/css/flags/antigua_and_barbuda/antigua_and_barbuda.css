@@ -1,0 +1,57 @@
+.antigua_and_barbuda{ position: absolute;
+    width: 550px;
+    height: 367px;
+}
+
+.antigua_and_barbuda_line_top{
+    position: relative;
+    width: 100%;
+    height: 144px;
+    background: #000000;
+}
+
+.antigua_and_barbuda_line_middle{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background: #0072c6;
+}
+
+.antigua_and_barbuda_line_bottom{
+    position: relative;
+    width: 100%;
+    height: 144px;
+    background: #ffffff;
+}
+
+.antigua_and_barbuda_sun{
+    position: absolute;
+    background: url("antigua_and_barbuda_sun.png");
+    z-index: 100;
+    height: 119px;
+    width: 238px;
+    left: 155px;
+    top: 26px;
+}
+
+.antigua_and_barbuda_triangle_bottomleft {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 367px solid red;
+    border-right: 275px solid transparent;
+    bottom: 0px;
+
+
+}
+
+.antigua_and_barbuda_triangle_bottomright{
+  position: relative;
+    width: 0;
+    height: 0;
+    border-bottom: 367px solid red;
+    border-left: 275px solid transparent;
+    bottom: 367px;
+    display: inline-block;
+    float: right;
+}

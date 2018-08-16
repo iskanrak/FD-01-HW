@@ -1,0 +1,21 @@
+.canada{ position: absolute;
+    width: 550px;
+    height: 275px;
+
+}
+
+.canada_base {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #ff0000;
+}
+
+.canada_maple_leaf{
+    position: absolute;
+    width: 275px;
+    height: 275px;
+    background: url("canada_maple_leaf.png") no-repeat center;
+    background-color: #ffffff;
+    left: 139px;
+}

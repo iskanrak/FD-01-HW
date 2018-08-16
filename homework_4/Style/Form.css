@@ -1,0 +1,123 @@
+.Foliac_FormContent{
+    text-align: center; 
+}
+.Foliac_Form{
+    text-align: center;
+    display:block;
+    width:700px;
+    margin: 0px auto;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.Foliac_FormHeader{
+    color:#48bf72;
+    font-family: 'BigJohn', "Arial", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 26px;
+    margin-bottom:35px;
+}
+.Foliac_FormBlock{
+    position: relative;
+    margin-bottom: 35px;
+}
+.Foliac_FormBlockInputName{
+    display:inline-block;
+    float:left;
+}
+.Foliac_FormBlockInputEmail{
+    display:inline-block;
+    float:right;
+}
+.Foliac_FormClear{
+    clear: both;
+}
+.Foliac_FormStyle {
+    border: 2px solid #3c4955;
+    border-radius: 3px;
+    background-color: #f1f1f1;
+    font-family: "Lato", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #a6a5a5;
+    text-indent: 65px;
+    display: inline-block;
+}
+.Foliac_FormIconBackground {
+    position: absolute;
+    display: inline-block;
+    width: 50px;
+    background-color: #3c4955;
+    border-radius: 3px;
+    height: 50px;
+}
+.Foliac_FormIconBackgroundTextarea{
+    height:230px;
+}
+.Foliac_FormIconBackground:after {    
+    content: "";
+    display: inline-block;
+    position: absolute;
+    border: 6px solid transparent;
+    border-left: 6px solid #3c4955;
+    left: 50px;
+    top:20px;
+}
+.Foliac_FormFirstLine{   
+    display: inline-block;
+    width: 335px;
+    height: 50px;
+    box-sizing: border-box;
+}
+.Foliac_FormSecondLine {
+    display: inline-block;
+    width: 700px;
+    height:230px;
+    resize: none;
+    box-sizing: border-box;
+}
+.Foliac_FormTextareaStyle{
+    padding-top:15px;
+    padding-left: 60px;
+    text-indent: 5px;
+}
+.Foliac_FormSubmitButton {
+    color: white;
+    background-color: #48bf72;
+    width: 700px;
+    height: 40px;
+    border: none;
+    text-transform: uppercase;
+}
+.Foliac_FormIconName{
+    background-image: url(../Image/FormIcon.png);
+    background-position: -1px 2px;
+    margin:14px;
+    box-sizing: border-box;
+    display: inline-block;
+    width:24px;
+    height:24px;
+}
+.Foliac_FormIconEmail{
+    background-image: url(../Image/FormIcon.png);
+    background-position: -1px -24px;
+    margin:17px 15px 15px 15px;
+    box-sizing: border-box;
+    display: inline-block;
+    width:23px;
+    height:17px;
+}
+.Foliac_FormIconPencil{
+    background-image: url(../Image/FormIcon.png);
+    background-repeat: no-repeat;
+    background-position:-1px -41px;
+    margin:20px 15px;
+    box-sizing: border-box;
+    display: block;
+    width:22px;
+    height:19px;
+}
+.Foliac_FormStyle:focus{
+    outline:none;
+}

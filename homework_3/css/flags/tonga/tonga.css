@@ -1,0 +1,29 @@
+.tonga{ position: absolute;
+    width: 550px;
+    height: 275px;
+    background: #c10000;}
+
+.tonga_rectangle_white {
+    position: absolute;
+    width: 230px;
+    height: 140px;
+    background: #ffffff;
+}
+
+.tonga_cross_line_horisontal{
+    position: absolute;
+    width: 105px;
+    height: 35px;
+    background: #c10000;
+    top: 52px;
+    left: 63px;
+}
+
+.tonga_cross_line_vertical{
+    position: absolute;
+    width: 35px;
+    height: 105px;
+    background: #c10000;
+    top: 17px;
+    left: 97px;
+}

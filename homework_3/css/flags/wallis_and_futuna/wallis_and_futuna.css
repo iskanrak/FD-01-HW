@@ -1,0 +1,63 @@
+.wallis_and_futuna{
+    position: absolute;
+    width: 390px;
+    height: 265px;
+    background: #ee293a;
+}
+
+.wallis_and_futuna_rectangle_border{
+    position: absolute;
+    width: 160px;
+    height: 108px;
+    background: #ffffff;
+}
+
+.wallis_and_futuna_rectangle_france_flag_base{
+    position: absolute;
+    width: 158px;
+    height: 106px;
+    background: #ee293a;
+}
+
+.wallis_and_futuna_rectangle_france_flag_line_left{
+    position: relative;
+    display: inline-block;
+    width: 54px;
+    height: 100%;
+    background: #002496;
+}
+.wallis_and_futuna_rectangle_france_flag_line_middle{
+    position: relative;
+    display: inline-block;
+    width: 54px;
+    height: 100%;
+    background: #ffffff;
+   left: -8px;
+}
+.cross_base{
+    position: absolute;
+    width: 86px;
+    height: 86px;
+    background: #ffffff;
+    left: 237px;
+    top: 91px;
+}
+.cross_line_rightbottom{
+    position: absolute;
+    width: 130px;
+    height: 20px;
+    background: #ee293a;
+    transform: rotate(45deg);
+    left: -20px;
+    top: 35px;
+}
+
+.cross_line_lefttop{
+    position: absolute;
+    width: 130px;
+    height: 20px;
+    background: #ee293a;
+    transform: rotate(-45deg);
+    left: -25px;
+    top: 35px;
+}
