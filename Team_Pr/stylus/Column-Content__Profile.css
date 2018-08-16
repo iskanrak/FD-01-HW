@@ -1,0 +1,324 @@
+.ChangeFontNavirator {
+  font-family: "OpenSansBold";
+  font-style: normal;
+  font-size: font-size;
+}
+.StatisticsButton {
+  border-radius: 8px 8px 0px 0px;
+  width: 49.3%;
+  height: 46px;
+  font-size: font-size;
+  font-family: "OpenSansBold";
+  font-style: normal;
+  color: #8e8071;
+  outline: none;
+  padding: 0px;
+  margin: 0px;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+.Column-Content__Button-Diagram-Stats {
+  background-color: #fff;
+}
+.Title-Data-Transfer {
+  text-transform: uppercase;
+  display: flex;
+  color: #8e8071;
+  font-size: font-size;
+  font-family: "OpenSansBold";
+  font-style: normal;
+  height: 54px;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #fff;
+  cursor: pointer;
+}
+.Audio,
+.Video,
+.Photo {
+  display: inline-flex;
+  height: 88px;
+  width: 32.4%;
+  box-sizing: border-box;
+  border-top: 5px solid;
+  background-color: #f6f0ec;
+  color: #a09b96;
+  padding-left: 6%;
+}
+.Audio {
+  border-color: #4daf7b;
+}
+.Video {
+  border-color: #e35836;
+}
+.Photo {
+  border-color: #ebc85e;
+}
+.UploadButton {
+  overflow: hidden;
+  cursor: pointer;
+  display: inline-flex;
+  background-color: #776b5e;
+  color: #fff;
+  box-sizing: border-box;
+  height: 80px;
+  width: 33.3%;
+  float: left;
+  border-bottom-left-radius: 8px;
+  justify-content: center;
+  align-items: center;
+}
+.UploadButton:hover {
+  background-color: #64584c;
+}
+.DiagramStatsButton-text {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+  position: absolute;
+  padding-top: 40px;
+}
+.UploadButtonIcon {
+  background-image: url("../image/StatisticIcons.png");
+  background-repeat: no-repeat;
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  display: flex;
+}
+.HiddenButtonUpload {
+  cursor: pointer;
+  opacity: 0;
+  width: 102px;
+  height: inherit;
+  padding: 0;
+  margin: 0;
+}
+.DroplinkButton {
+  width: 33.3%;
+  border-radius: 3px;
+  height: 80px;
+  cursor: pointer;
+  position: relative;
+  float: left;
+}
+.DroplinkButton ul {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+}
+.Socialbutton {
+  text-transform: uppercase;
+  background-color: #776b5e;
+  border: none;
+  display: inline-flex;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  box-sizing: border-box;
+  height: inherit;
+  width: 100%;
+  outline: none;
+  padding-top: 54px;
+  justify-content: center;
+}
+.Socialbutton:hover {
+  background-color: #64584c;
+}
+.SocialButtonIcon {
+  background-image: url("../image/StatisticIcons.png");
+  background-repeat: no-repeat;
+  background-position: -40px;
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  display: inline-flex;
+  justify-content: center;
+  left: 40px;
+  bottom: 25x;
+}
+.Socialbutton:active {
+  position: absolute;
+  top: 1px;
+}
+.DroplinkButton li {
+  display: block;
+}
+.DroplinkButton li a {
+  padding: 5px 12px 4px 34px;
+  margin: 1px;
+  display: block;
+  color: #000;
+  text-decoration: none;
+  font-size: 12px;
+  background-repeat: no-repeat;
+  background-position: 10px 3px;
+}
+.DroplinkButton a:hover {
+  background-color: #00a3dd;
+  opacity: 0.5;
+}
+.Facebook {
+  background-image: url("../image/facebook.png");
+  background-repeat: no-repeat;
+}
+.Twitter {
+  background-image: url("../image/twitter.png");
+  background-repeat: no-repeat;
+}
+.Vk {
+  background-image: url("../image/vk.png");
+  background-repeat: no-repeat;
+}
+.Gplus {
+  background-image: url("../image/gplus.png");
+  background-repeat: no-repeat;
+}
+.BackUpButton {
+  overflow: hidden;
+  cursor: pointer;
+  display: inline-flex;
+  background-color: #776b5e;
+  color: #fff;
+  box-sizing: border-box;
+  height: 80px;
+  width: 33.3%;
+  float: left;
+  border-bottom-right-radius: 8px;
+  justify-content: center;
+  align-items: center;
+}
+.BackUpButton:hover {
+  background-color: #64584c;
+}
+.BackUpButtonIcon {
+  background-image: url("../image/StatisticIcons.png");
+  background-repeat: no-repeat;
+  background-position-x: -74px;
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  display: flex;
+}
+.InputChart {
+  border: none;
+  outline: none;
+  background-color: #f6f0ec;
+  height: 58px;
+  width: 60px;
+  font-size: font-size;
+  font-family: "OpenSansBold";
+  font-style: normal;
+  position: absolute;
+}
+.InputChart:hover {
+  background-color: #b1a599;
+}
+.MyCommon-Settings-Profile__My-Profile {
+  background: #fff;
+  width: 58%;
+  height: 66px;
+  display: inline-flex;
+  float: left;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.MyCommon-Settings-Profile__My-Profile:hover {
+  background-color: #f8f3f0;
+}
+.My-Profile__icon {
+  display: block;
+  background-image: url("../image/StatisticIcons.png");
+  background-position: 63px -59px;
+  height: 30px;
+  width: 40px;
+}
+.MyCommon-Settings-Profile__Edit {
+  background: #fff;
+  width: 42%;
+  height: 66px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  text-transform: uppercase;
+}
+.MyCommon-Settings-Profile__Edit:hover {
+  background-color: #f8f3f0;
+}
+.Edit__icon {
+  background-image: url("../image/StatisticIcons.png");
+  background-position-x: -148px;
+  height: 30px;
+  width: 35px;
+}
+.MyCommon-Settings-Profile__My-Profile-Ul-Outer {
+  list-style: none;
+  margin: 0;
+  padding-left: 0px;
+  height: 50px;
+  width: 150px;
+  display: block;
+}
+.MyCommon-Settings-Profile__My-Profile-Text {
+  text-decoration: none;
+  background: #fff;
+  color: #8e8071;
+  text-align: center;
+  font-size: font-size;
+font-family
+  font-style: normal;
+  line-height: 50px;
+  display: block;
+  -moz-transition: all 0.3s 0.01s ease;
+  -o-transition: all 0.3s 0.01s ease;
+  -webkit-transition: all 0.3s 0.01s ease;
+  width: 145px;
+}
+.MyCommon-Settings-Profile__My-Profile-List {
+  text-decoration: none;
+  background: #fff;
+  color: #8e8071;
+  padding-left: 25px;
+  font-size: 13px;
+  font-family: "OpenSansBold";
+  font-style: normal;
+  line-height: 50px;
+  display: block;
+  -moz-transition: all 0.3s 0.01s ease;
+  -o-transition: all 0.3s 0.01s ease;
+  -webkit-transition: all 0.3s 0.01s ease;
+  width: 150px;
+}
+.MyCommon-Settings-Profile__My-Profile-Text:hover {
+  background: #f8f3f0;
+  border-bottom: 3px solid #4daf7b;
+}
+.MyCommon-Settings-Profile__My-Profile-List:hover {
+  background: #f8f3f0;
+  border-left: 3px solid #4daf7b;
+}
+.MyCommon-Settings-Profile__My-Profile-List-Visible {
+  float: left;
+  position: relative;
+  width: 178px;
+  display: block;
+}
+.MyCommon-Settings-Profile__My-Profile-Ul-Inter {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  margin-top: 25px;
+  height: 50px;
+  position: absolute;
+  top: 25px;
+  display: none;
+}
+.MyCommon-Settings-Profile__My-Profile-List-Visible:hover > .MyCommon-Settings-Profile__My-Profile-Ul-Inter {
+  display: block;
+  width: 178px;
+}

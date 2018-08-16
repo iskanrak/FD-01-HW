@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset ="UTF-8">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/infostreams/bootstrap-select/fd227d46de2afed300d97fd0962de80fa71afb3b/dist/css/bootstrap-select.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <link type="text/css" rel="Stylesheet" href="../AmBit.github.io/css/SiteFont.css"/>
+        <link type="text/css" rel="Stylesheet" href="../AmBit.github.io/css/SiteCommonStyle.css"/>
+        <link type="text/css" rel="Stylesheet" href="../AmBit.github.io/css/SiteFont.css"/>
+        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        -->
+        <!-- <link rel="stylesheet" type="text/css" href="../AmBit.github.io/node_modules/semantic-ui/dist/semantic.min.css">-->
+        <link rel="stylesheet" media="screen and (max-width: 970px)" href="../AmBit.github.io/css/MediaDis.css">
+        <title> TeamProject </title>
+    </head>
+    <body  class="AmBit__Background">
+        <div class="Column-Content">
+            <div  class="Column-Content_Navigator">
+                <button class="ChangeFontNavirator Navigator_Button Navigator__Button-Check-In NavigatorButton">check In<div class="CheckCounter CountPharos"></div></button>
+                <button class="ChangeFontNavirator Navigator_Button Navigator__Button-Events NavigatorButton">events</button>
+                <button class="ChangeFontNavirator Navigator_Button Navigator__Button-Account NavigatorButton">account</button>
+                <button class="ChangeFontNavirator Navigator_Button Navigator__Button-Settings NavigatorButton">settings</button>
+            </div>
+            <div class="My-Common_Content Active_Tab">
+                <iframe class="CountMaps maps" src="https://yandex.ru/map-widget/v1/?um=constructor%3A6b3d8eb1d7134c77ef768c7bd36eb01457307c20e5f7d4931dc027f1809455c3&amp;"></iframe>
+            </div>
+            <div class="My-Common_Content Active_Tab">
+                <canvas class=" My-Common_Content__EventGame" id="myCanvas" width="634px" height="320px"></canvas>
+            </div>
+            <div class="My-Common_Content My-Common_Content__Account Active_Tab">
+                <div class="Column-Content__My-Common "> <!-- Катерина -->
+                    <div class="Column-Content__Diagram">
+                        <div class="Column-Content__DiagramBlockDarkGreen">
+                            <div id="tradingview-widget-container" style="width: 100%; height: 100%;">
+                                <script type="text/javascript" src="https://d33t3vvu2t2yu5.cloudfront.net/tv.js"></script>
+                                <script type="text/javascript">
+                                    var tvsymbol = "FX_IDC:EURUSD";
+                                    var tvsymbolout = tvsymbol.replace('/', '');
+                                    new TradingView.widget({
+                                        "width": 520,
+                                        "autosize": true,
+                                        "symbol": tvsymbolout,
+                                        "interval": "D",
+                                        "timezone": "exchange",
+                                        "theme": "white",
+                                        "toolbar_bg": "#f4f7f9",
+                                        "allow_symbol_change": true,
+                                        "hideideas": true,
+                                        "show_popup_button": true,
+                                        "hide_side_toolbar": false,
+                                        "popup_width": "500",
+                                        "popup_height": "325",
+                                        "save_image": true,
+                                    });</script>
+                            </div>
+                        </div>
+                        <div class="Column-Content__DiagramBlockDateClock"><!--белый блок с часами -->
+                            <span class="Column-Content__DiagramDateClockStyle" id="DateClock"> </span>
+                            <div class="Column-Content__DiagramBlockCityCountry">
+                                <span class="Column-Content__DiagramCityCountryStyle">minsk, belarus</span>
+                            </div>
+                        </div>
+                        <div class="Column-Content__DiagramConverterBackground">
+                            <div class="Column-Content__DiagramConverter">
+                                <div class="Column-Content__DiagramConverterSharesTraded">
+                                    <span class="Column-Content__DiagramConverterDigitsStyle" id="DigitsM">0 M</span>
+                                    <p class="Column-Content__DiagramConverterBlockStyleText">shares traded</p>
+                                </div>
+                                <div class="Column-Content__DiagramConverterMarketCap">
+                                    <span class="Column-Content__DiagramConverterDigitsStyle" id="DigitsB">0 B</span>
+                                    <p class="Column-Content__DiagramConverterBlockStyleText">market cap</p>
+                                </div>
+                            </div>
+                            <div class="Column-Content__DiagramConverterTextBetweenBlock">
+                                <p class="Column-Content__DiagramConverterTextAapl">aapl</p>
+                                <p class="Column-Content__DiagramConverterTextYearlyChange">yearly change</p>
+                            </div>
+                            <div class="Column-Content__DiagramConverterBlockBottom">
+                                <label>
+                                    <input id="Amount" class="Column-Content__DiagramInputField" type="number" placeholder="0 MB"
+                                           oninput="CurrencyConverter(this.value)"
+                                           onchange="CurrencyConverter(this.value)">
+                                </label>
+                                <div class="Column-Content__DiagramConverterBlockBottomGraph"> <!-- график нижний-->
+                                    <div class="Column-Content__DiagramConverterBlockBottomGraphPillarRear">
+                                        <div class="Column-Content__DiagramConverterBlockBottomGraphPillarSize Column-Content__DiagramConverterBlockBottomGraphPillar1"></div>
+                                    </div>
+                                    <div class="Column-Content__DiagramConverterBlockBottomGraphPillarRear">
+                                        <div class="Column-Content__DiagramConverterBlockBottomGraphPillarSize Column-Content__DiagramConverterBlockBottomGraphPillar2"></div>
+                                    </div>
+                                    <div class="Column-Content__DiagramConverterBlockBottomGraphPillarRear">
+                                        <div class="Column-Content__DiagramConverterBlockBottomGraphPillarSize Column-Content__DiagramConverterBlockBottomGraphPillar3"></div>
+                                    </div>
+                                    <div class="Column-Content__DiagramConverterBlockBottomGraphPillarRear">
+                                        <div class="Column-Content__DiagramConverterBlockBottomGraphPillarSize Column-Content__DiagramConverterBlockBottomGraphPillar4"></div>
+                                    </div>
+                                    <div class="Column-Content__DiagramConverterBlockBottomGraphPillarRear">
+                                        <div class="Column-Content__DiagramConverterBlockBottomGraphPillarSize Column-Content__DiagramConverterBlockBottomGraphPillar5"></div>
+                                    </div>
+                                    <div class="Column-Content__DiagramConverterBlockBottomGraphPillarRear">
+                                        <div class="Column-Content__DiagramConverterBlockBottomGraphPillarSize Column-Content__DiagramConverterBlockBottomGraphPillar6"></div>
+                                    </div>
+                                    <div class="Column-Content__DiagramConverterBlockBottomGraphPillarRear">
+                                        <div class="Column-Content__DiagramConverterBlockBottomGraphPillarSize Column-Content__DiagramConverterBlockBottomGraphPillar7"></div>
+                                    </div>
+                                    <div class="Column-Content__DiagramConverterBlockBottomGraphPillarRear">
+                                        <div class="Column-Content__DiagramConverterBlockBottomGraphPillarSize Column-Content__DiagramConverterBlockBottomGraphPillar8"></div>
+                                    </div>
+                                    <div class="Column-Content__DiagramConverterBlockBottomGraphPillarRear">
+                                        <div class="Column-Content__DiagramConverterBlockBottomGraphPillarSize Column-Content__DiagramConverterBlockBottomGraphPillar9"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Column-Content__My-Common-Settings">
+                        <div class="Column-Content__My-Common-SettingsBlockFollowers">
+                            <div class="Column-Content__My-Common-SettingsBlockFollowersBorderAvatar">
+                                <div class="Column-Content__My-Common-SettingsBlockFollowersAvatar">
+                                </div>
+                            </div>
+                            <div class="Column-Content__My-Common-SettingsBlockFollowersName ChangeFontNavirator">courtney timmons</div>
+                            <div class="Column-Content__My-Common-SettingsBlockFollowersCounts">15,323 followers</div>
+                        </div>
+                        <div class="Column-Content__My-Common-SettingsBlockUser">
+                            <span class="Column-Content__My-Common-SettingsBlockUserName">Edit user</span>
+                            <div class="Column-Content__My-Common-SettingsBlockUserIcon Icon"></div>
+                        </div>
+                        <div class="Column-Content__My-Common-SettingsBlokStattings">
+                            <span class="Column-Content__My-Common-SettingsBlockStatisticsName">Web statistcs</span>
+                            <div class="Column-Content__My-Common-SettingsBlockStatisticsIcon Icon"></div>
+                        </div>
+                        <div class="Column-Content__My-Common-SettingsBlockSetting">
+                            <span class="Column-Content__My-Common-SettingsBlockSettingName">Upload settings</span>
+                            <div class="Column-Content__My-Common-SettingsBlockSettingIcon Icon"></div>
+                        </div>
+                        <div class="Column-Content__My-Common-SettingsBlockEvents">
+                            <span class="Column-Content__My-Common-SettingsBlockEventsName">Events</span>
+                            <div class="Column-Content__My-Common-SettingsBlockEventsIcon Icon"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Column-Content__Profile ChangeFontNavirator"><!-- Алекс -->
+                    <div class="Column-Content__Statistics">
+                        <button  class="Column-Content__Button-Diagram-Stats StatisticsButton ChangeFontNavirator">Diagram Stats</button>
+                        <button class="Column-Content__Button-Month-Report StatisticsButton ChangeFontNavirator">Month Report</button>
+                        <div class="Column-Content__Diagram-Stats">
+                            <div class="Column-Content__Data-Transfer">
+                                <div id="DrawChart" class="Title-Data-Transfer ChangeFontNavirator">data transfer</div>
+                                <div id="Chart_div"></div>
+                                <div class="Audio ChangeFontNavirator">audio
+                                    <input id="Audio" class="InputChart">
+                                </div>
+                                <div class="Video ChangeFontNavirator" >video
+                                    <input id="Video ChangeFontNavirator" class="InputChart">
+                                </div>
+                                <div class="Photo ChangeFontNavirator">photo
+                                    <input id="Photo" class="InputChart"></div>
+                            </div>
+                        </div>
+                        <div class="UploadButton">
+                            <div class="UploadButtonIcon"></div>
+                            <div class="DiagramStatsButton-text">upload files</div>
+                            <input type="file" class="HiddenButtonUpload"/>
+                        </div>
+                        <div class="DroplinkButton" onclick="down()">
+                            <div class="SocialButtonIcon"></div>
+                            <div class="Socialbutton">sharelink</div>
+                            <ul id="Dropdown" style="display:none">
+                                <li class="Facebook"><a href="http://www.facebook.com/">Facebook</a></li>
+                                <li class="Twitter"><a href="http://twitter.com/">Twitter</a></li>
+                                <li class="Gplus"><a href="https://plus.google.com/u/0/discover">Google Plus</a></li>
+                                <li class="Vk"><a href="https://vk.com'">ВКонтакте</a></li>
+                            </ul>
+                        </div>
+                        <div class="BackUpButton">
+                            <div class="BackUpButtonIcon"></div>
+                            <div class="ChangeFontNavirator DiagramStatsButton-text ">back up</div>
+                        </div>
+                        <div class="Column-Content-button__Month-Report">
+                        </div>
+                    </div>
+                    <div class="MyCommon-Settings-Profile">
+                        <div class="MyCommon-Settings-Profile__My-Profile">
+                            <ul class="MyCommon-Settings-Profile__My-Profile-Ul-Outer">
+                                <li class="MyCommon-Settings-Profile__My-Profile-List-Visible">
+                                    <a class="MyCommon-Settings-Profile__My-Profile-Text ChangeFontNavirator">my profile</a>
+                                    <ul class="MyCommon-Settings-Profile__My-Profile-Ul-Inter">
+                                        <li class="t"><a class="MyCommon-Settings-Profile__My-Profile-List ChangeFontNavirator">invite friends</a></li>
+                                        <li class="t" ><a class="MyCommon-Settings-Profile__My-Profile-List ChangeFontNavirator">find friends</a></li>
+                                        <li class="t"><a class="MyCommon-Settings-Profile__My-Profile-List ChangeFontNavirator">log out</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="My-Profile__icon"></div>
+                        </div>
+                        <div class="MyCommon-Settings-Profile__Edit">
+                            <div class="Edit__icon ChangeFontNavirator"></div>edit</div>
+                    </div>
+                </div>
+            </div>
+            <div class="My-Common_Content Active_Tab Settings__Form">
+                <div class="Column-Content_Navigator">
+                    <span class="ChangeFontNavirator Formating__InBlock  Content_Align">change theme</span>
+                    <button  class="Settings__Button">
+                        <span class="Formating__InBlock ChangeFontNavirator">Apply</span>
+                    </button>
+                    <div class="Formating__InBlock  Content_Align">
+                        <input class="ChangeFontNavirator Setting_Input__Style" value="1" name="theme" type="radio" />
+                        <input class="Setting_Input__Style" value="2" name="theme" type="radio" />
+                    </div>
+                    <div class="Formating__InBlock  Content_Align">
+                        <span class="Formating__InBlock ChangeFontNavirator">Light</span>
+                        <span class="Formating__InBlock ChangeFontNavirator">Dark</span>
+                    </div>
+                </div>
+                <div class="Column-Content_Navigator">
+                    <span class="ChangeFontNavirator Formating__InBlock Content_Align">change font</span>
+                    <button id="AplyFont">
+                        <span class="Formating__InBlock ChangeFontNavirator">Apply</span>
+                    </button >
+                    <div class="Formating__InBlock  Content_Align">
+                        <select id="font" class="ChangeFontNavirator">
+                            <option value="OpenSansBold">OpenSansBold</option>
+                            <option value="Deftone">Deftone</option>
+                            <option value="Modern">Modern</option>
+                            <option value="GradeOne">GradeOne</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="Column-Content_Navigator">
+                </div>
+                <div class="CarouselIndicators">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner" style="border-radius: 8px;">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="../AmBit.github.io/image/zvezdnoe.jpg" alt="First slide"/>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="../AmBit.github.io/image/kapli.jpg" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="../AmBit.github.io/image/tuman.jpg" alt="Third slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div  class="Column-Favorite-Dispatch">
+            <div class="Column-Favorite-Dispatch__Mail-Addresse">
+                <div class="Column-Favorite-Dispatch__Mail-Addressee" >
+                    <div class="Column-Favorite-Dispatch_Background">
+                    </div>
+                    <div class="Column-Favorite-Dispatch_Information">
+                        <div class="Column-Favorite-Dispatch_Radius">
+                            <div class="Column-Favorite-Dispatch_Photo">
+                            </div>
+                        </div>
+                        <div class="Column-Favorite-Dispatch_Name ChangeFontNavirator">
+                            <span class="Column-Favorite-Dispatch_Nickname">Petrusenko Sergei</span>
+                            <div class="Column-Favorite-Dispatch_History">
+                                <p class="Column-Favorite-Dispatch_Comment"> Your talent amazes! This is awesome</p>
+                            </div>
+                        </div>
+                        <div class="Column-Favorite-Dispatch_statistics-list">
+                            <button class="Column-Favorite-Dispatch_list-all Column-Favorite-Dispatch_list-view">
+                                <script src="javascript/MailAddresseeView.js"></script>
+                            </button>
+                            <button class="Column-Favorite-Dispatch_list-all Column-Favorite-Dispatch_list-comment">
+                                <div class="Column-Favorite-Dispatch_list-comment-number">
+                                    <p>67</p>
+                                </div>
+                            </button>
+                            <button class="Column-Favorite-Dispatch_list-all Column-Favorite-Dispatch_list-like" onclick="like()" >
+                                <p id="Column-Favorite-Dispatch_lake">0</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Column-Favorite-Dispatch__Contact-Form">
+                <form class="form_style" method="POST" action="">
+                    <div class="form_UpperBlockStructure">
+                        <div class="form__block form_contactsBlock">
+                            <label for="email" class="form_inputNamesStyle">Contacts</label>
+                            <select id="email" class="selectpicker form-control" multiple data-width="308px"  data-live-search="true" title="You can add email" data-size="5" data-actions-box="true" required>
+                                <option value="0" data-content="<span class='label label-success'>sergey.p@gmail.com</span>">Sergey Petrusenko</option>
+                                <option value="1" data-content="<span class='label label-primary'>marina.turankova@yahoo.com</span>">Turankova Marina</option>
+                                <option value="2" data-content="<span class='label label-info'>vasanto@example.ru</span>">Antonovich Vasily</option>
+                                <option value="3" data-content="<span class='label label-success'>pervukhin@gmail.com</span>">Pervukhin Sergey</option>
+                                <option value="4" data-content="<span class='label label-warning'>nata.bibik@mail.ru</span>">Bibik Natasha</option>
+                                <option value="5" data-content="<span class='label label-danger'>artemnastya@gmail.com</span>">Artemy Nastya</option>
+                                <option value="6" data-content="<span class='label label-primary'>polina@yahoo.com</span>">Senakosova Polina</option>
+                                <option value="7" data-content="<span class='label label-info'>a.evch@yandex.ru</span>">Evchenko Alina</option>
+                                <option value="8" data-content="<span class='label label-success'>zhenya.voitekhovich@mail.ru</span>">Voitekhovich Zhenya</option>
+                                <option value="9" data-content="<span class='label label-warning'>antonka@gmail.com</span>">Karelin Anton</option>
+                                <option value="10" data-content="<span class='label label-danger'>olza@mail.ru</span>">Zasimowicz Olya</option>
+                                <option value="11" data-content="<span class='label label-primary'>panknik@gmail.com</span>">Pankrat Nikita</option>
+                                <option value="12" data-content="<span class='label label-info'>antden@yahoo.com</span>">Antonenko Denis</option>
+                                <option value="13" data-content="<span class='label label-success'>vershostak@yandex.ru</span>">Shostak Veronik</option>
+                                <option value="14" data-content="<span class='label label-warning'>artem@yahoo.com</span>">Lazickiy Artem</option>
+                                <option value="15" data-content="<span class='label label-danger'>sashae@gmail.com</span>">Ermolaev Sasha</option>
+                            </select>
+                        </div>
+
+                        <div class="form__block">
+                            <label for="subject" class="form_inputNamesStyle">Subject</label>
+                            <input id="subject" class="form__inputStyle ntSaveForms" type="text" placeholder="You can add a subject" required>
+                        </div>
+                        <div class="form__block">
+                            <label for="textarea" class="form_inputNamesStyle">Message</label>
+                            <textarea id="textarea" class="form__textarea ntSaveForms" rows="13" placeholder="Leave your message" required></textarea>
+                        </div>
+                    </div>
+                    <div class="form__blockButtons" id="buttonBlock">
+                        <label class="form_inputNamesStyle checkbox__position"><input id="checkbox" name="iCheck" type="checkbox">  Save a copy</label>
+                        <button type="submit" class="form__submitButton ntSaveFormsSubmit" id="submit"><i class="small red inverted caret right circular icon"></i>Send Mail</button>
+                        <div class="ui success message" id="success">
+                            <div class="header">
+                                Message was sent.
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="../AmBit.github.io/javascript/SiteScript.js"></script>
+    <script type="text/javascript" src="javascript/EventGame.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="../AmBit.github.io/javascript/SiteDiagramSettings.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="javascript/DataTransferDiagramm.js"></script>
+    <script type="text/javascript" src="javascript/DropLinkSocial.js"></script>
+    <script src="javascript/UploadButton.js"></script>
+    <script src="javascript/MailAddresseeBaza.js"></script>
+    <script type="text/javascript" src="../AmBit.github.io/javascript/SiteScript.js"></script>
+    <script type="text/javascript" src="javascript/EventGame.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="../AmBit.github.io/javascript/SiteDiagramSettings.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="javascript/DataTransferDiagramm.js"></script>
+    <script type="text/javascript" src="javascript/DropLinkSocial.js"></script>
+    <script src="javascript/UploadButton.js"></script>
+    <script src="https://cdn.rawgit.com/infostreams/bootstrap-select/fd227d46de2afed300d97fd0962de80fa71afb3b/dist/js/bootstrap-select.min.js"></html>
+<script src="javascript/MailAddresseeBaza.js"></script>
+<script src="../AmBit.github.io/node_modules/semantic/dist/semantic.min.js"></script>
+<script src="../AmBit.github.io/javascript/FormSave.js"></script>
+<script src="../AmBit.github.io/javascript/jquery.Storage.js"></script>
+<script src="../AmBit.github.io/node_modules/icheck/icheck.min.js"></script>
+</html>

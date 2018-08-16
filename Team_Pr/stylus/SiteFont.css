@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'OpenSansBold';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../Font/OpenSans-Bold.woff"), url("../Font/OpenSansBold.ttf");
+}
+@font-face {
+  font-family: 'OpenSans-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../Font/OpenSans-Regular.woff"), url("../Font/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: 'Deftone';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../Font/Deftone.ttf");
+}
+@font-face {
+  font-family: 'GradeOne';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../Font/GradeOne.ttf");
+}
+@font-face {
+  font-family: 'Modern';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../Font/Modern.ttf");
+}

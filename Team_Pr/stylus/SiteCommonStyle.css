@@ -1,0 +1,29 @@
+.MyCommon-Settings-Profile {
+  display: flex;
+  height: 174px;
+  border-radius: border-radius;
+}
+.Column-Favorite-Dispatch {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 372px;
+  height: 873px;
+  background-color: #d48264;
+}
+.Column-Favorite-Dispatch__Mail-Addresse {
+  display: flex;
+  flex-direction: column;
+  width: 372px;
+  height: 392px;
+  border-radius: border-radius;
+  margin-bottom: all-margin;
+  background-color: #d42864;
+}
+.Column-Favorite-Dispatch__Contact-Form {
+  display: flex;
+  flex-direction: column;
+  height: 462px;
+  border-radius: border-radius;
+  background-color: #d42864;
+}
